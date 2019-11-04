@@ -1,14 +1,15 @@
 /**
- * My awesome module.
- * @param input Lorem ipsum.
- * @param postfix Lorem ipsum.
+ * The user agent to be used.
  * @example
  * ```
- * const theModule = require("the-module");
- * theModule("unicorns");
- * //=> 'unicorns & rainbows'
+ * const userAgent = require("ergent");
+ * userAgent // In nodeJS
+ * //=> 'myPackage v1.0.0'
+ *
+ * userAgent // In browser
+ * //=> 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
  * ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string;
+declare const ergent: string;
 
-export = theModule;
+export = ergent;

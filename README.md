@@ -1,41 +1,30 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Ergent [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/ergent/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/ergent)
 
-My awesome module.
+Get the user agent to use, respecting the package.json and navigator.userAgent
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/ergent.png)](https://npmjs.com/package/ergent)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install ergent
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const userAgent = require("ergent");
+userAgent; // In nodeJS
+//=> 'myPackage v1.0.0'
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+userAgent; // In browser
+//=> 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
 ```
 
 ## API
 
-### theModule(input, options?)
-
-#### input
+### ergent
 
 Type: `string`
 
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The user agent to be used.

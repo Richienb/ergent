@@ -1,8 +1,8 @@
 {
-    "name": "the-module",
+    "name": "ergent",
     "version": "0.0.0",
-    "description": "My awesome module.",
-    "repository": "https://github.com/Richienb/the-module.git",
+    "description": "Get the user agent to use, respecting the package.json and navigator.userAgent",
+    "repository": "https://github.com/Richienb/ergent.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "main": "index.js",
@@ -17,8 +17,18 @@
         "lint": "eslint .",
         "test": "yarn lint && ava"
     },
-    "keywords": [],
-    "dependencies": {},
+    "keywords": [
+        "useragent",
+        "browser",
+        "node",
+        "package"
+    ],
+    "dependencies": {
+        "clean-semver": "^1.0.0",
+        "pname": "^1.0.0",
+        "read-pkg": "^5.2.0",
+        "universal-user-agent": "^4.0.0"
+    },
     "devDependencies": {
         "ava": "^2.1.0",
         "eslint": "^6.6.0",

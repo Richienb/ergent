@@ -1,13 +1,6 @@
 import test from "ava"
-import theModule from "."
+import userAgent from "."
 
 test("main", (t) => {
-    t.throws(() => {
-        theModule(123)
-    }, {
-        instanceOf: TypeError,
-        message: "Expected a string, got number",
-    })
-
-    t.is(theModule("unicorns"), "unicorns & rainbows")
+    t.is(typeof userAgent, "string")
 })
