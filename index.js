@@ -6,8 +6,10 @@ const packageName = require("pname")
 const cleanSemver = require("clean-semver")
 
 module.exports = (() => {
-    if (packageName) {
-        if (pkgConf.version) return `${packageName} v${cleanSemver(pkgConf.version)}`
-        else return packageName
-    } else return universalUserAgent
+	if (packageName) {
+		if (pkgConf.version) return `${packageName} v${cleanSemver(pkgConf.version)}`
+		return packageName
+	}
+
+	return universalUserAgent
 })()
