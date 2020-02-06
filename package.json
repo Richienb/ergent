@@ -1,6 +1,6 @@
 {
     "name": "ergent",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "Get the user agent to use, respecting the package.json and navigator.userAgent",
     "repository": "https://github.com/Richienb/ergent.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
